@@ -4,12 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="mainCSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Log in</title>
 </head>
 <body>
+<nav class="nav-extended container indigo darken-4">
+    <div class="nav-wrapper">
+        <a href="#home" class="brand-logo center">Digit City</a>
 
+    </div>
+    <div class="nav-content center  indigo darken-2">
+        <ul class="tabs tabs-transparent">
+            <li class="tab"><a class="active" href="#home">Home</a></li>
+            <li class="tab"><a href="#news">News</a></li>
+            <li class="tab "><a id="secret" onclick="checkLog()" href="#about">About Me</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="home" class="col s12 container white-text">
+    <div>
+        <p class="center">This is Home page</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem debitis dolor, dolorem
+            eligendi modi molestiae nulla obcaecati quaerat suscipit. At inventore ipsa libero ullam veritatis!
+            Aperiam eveniet qui quibusdam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam,
+            debitis doloribus et eum facilis illo impedit iusto laudantium libero maiores mollitia officiis
+            praesentium quae similique sunt vel veritatis. Harum. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Alias dignissimos dolor, dolorem fugiat fugit id impedit ipsa ipsam ipsum, iste maiores nesciunt
+            obcaecati officia pariatur repellendus, tempora vel vitae voluptas. </p>
+    </div>
+</div>
+<div id="news" class="col s12 container white-text">
+    <div>
+        <p>This is News page</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cumque fugiat hic laboriosam rem
+            voluptatem. Aspernatur enim eos minima porro quam totam unde. Assumenda est laboriosam reiciendis
+            suscipit vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias
+            aliquid autem consequatur, dolor, dolore esse et hic impedit incidunt itaque laudantium nobis pariatur
+            praesentium sit tenetur ullam vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            obcaecati, veritatis? Ab amet consequatur debitis dicta dolorum esse eveniet facere fugit incidunt ipsam,
+            iste non pariatur rerum soluta tempore vero.</p>
+    </div>
+</div>
+<div id="about" class="col s12 container white-text">
+    <div>
+        <p>This is About Me page</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem cum deleniti deserunt dolore eaque
+            eos itaque laboriosam laborum magnam magni maiores modi, nesciunt, officiis perspiciatis, vel veritatis
+            voluptatibus. Beatae.</p>
+    </div>
+</div>
+
+<!--<div id="login" class="container white-text">-->
+<!--<h1 align="center"><a href="" class="popup" rel="popuprel">registration</a></h1>-->
+
+
+<!--&lt;!&ndash;<form class="popupbox" id="popuprel" name="registration">&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="text">&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="text">&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="submit" value="GO">&ndash;&gt;-->
+
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+
+<!--<-->
+
+
+<!--&lt;!&ndash;<div id="fade"></div>&ndash;&gt;-->
+<!--</div>-->
+<div class="container">
+    <form>
+        <div class="form-group row">
+            <label for="name" class="col-sm-3 col-form-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="name">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="pass" class="col-sm-3 col-form-label">Password</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="pass">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<main>
+
+
+</main>
+
+
+<footer class="page-footer indigo darken-2">
+    <div class="container ">
+        <div class="nav-content center">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#home">Home</a></li>
+                <li class="tab"><a href="#news">News</a></li>
+                <li class="tab "><a href="#about">About Me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright indigo darken-4">
+        <div class="container center">
+            © 2018 Copyright Text
+        </div>
+    </div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"
@@ -17,6 +123,5 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="app.js"></script>
-
 </body>
 </html>
